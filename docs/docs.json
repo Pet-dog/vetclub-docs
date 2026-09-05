@@ -1,0 +1,19 @@
+{
+  "name": "VetClub Engineering",
+  "navigation": {
+    "groups": [
+      {
+        "group": "Documentation",
+        "pages": [
+          "index"
+        ]
+      },
+      {
+        "group": "Skills",
+        "pages": [
+          "skills/index"
+        ]
+      }
+    ]
+  }
+}
