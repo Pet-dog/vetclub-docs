@@ -43,7 +43,7 @@ allowlist.
 - Docs7 CLI: `@upstash/docs7@0.1.0`, pinned for the local proof.
 - Node.js: `>=20.19` as required by that release.
 - Hosted tier: Free only.
-- Published pages: `index` and `skills/index` only.
+- Published pages: `index` and `skills` only.
 
 ## ADDED
 
@@ -97,7 +97,7 @@ allowlist.
 ## Acceptance criteria
 
 - **AC-D7-1.** The public Git tree contains only `README.md`, this criteria
-  file, `docs/docs.json`, `docs/index.mdx`, `docs/skills/index.mdx`, and
+  file, `docs/docs.json`, `docs/index.mdx`, `docs/skills.mdx`, and
   `docs/robots.txt`; every item is intentionally public and no symlink exists.
 - **AC-D7-2.** The pinned Docs7 CLI starts a local preview from `docs`, and both
   `/` and `/skills` return successful HTML responses with their expected
@@ -109,7 +109,7 @@ allowlist.
   domain, DNS changes, autonomous Agent, PR Review, schedule, and Context7
   indexing are not enabled.
 - **AC-D7-5.** After publication, `/`, `/skills`, `/index.md`,
-  `/skills/index.md`, `/llms.txt`, and `/llms-full.txt` are readable and contain
+  `/skills.md`, `/llms.txt`, and `/llms-full.txt` are readable and contain
   only the two allowlisted pages; the previous Vercel/GitHub preview path is
   unchanged.
 
