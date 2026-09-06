@@ -25,9 +25,9 @@ sdd:
 ## Outcome
 
 A separate public repository publishes a two-page VetClub documentation canary
-with Docs7 Free: a public technical introduction and a sanitized catalog of the
-25 baseline skills. The repository itself is the positive publication
-allowlist.
+with Docs7 Free: a public technical introduction and a sanitized catalog of 25
+baseline skills plus 52 optional, task-specific Vercel skills. The repository
+itself is the positive publication allowlist.
 
 ## Producer and consumer identity
 
@@ -35,8 +35,8 @@ allowlist.
   `main`, Docs7 path `docs`.
 - Consumer: Docs7 Free hosted site on its generated `*.docs7.io` hostname.
 - Source material: public-safe summaries derived from the current VetClub
-  skills catalog; no live synchronization or repository link to a private
-  source.
+  skills catalog; no skill bodies, live synchronization, or repository link to
+  a private source.
 
 ## Versions and contract
 
@@ -49,8 +49,8 @@ allowlist.
 
 - One isolated public documentation repository.
 - One Docs7 configuration, two MDX pages, and one explicit crawler policy.
-- A sanitized catalog containing names and public summaries for exactly 25
-  baseline skills.
+- A sanitized catalog containing names and public summaries for exactly 77
+  unique skills: 25 baseline skills and 52 optional Vercel skills.
 
 ## MODIFIED
 
@@ -102,9 +102,11 @@ allowlist.
 - **AC-D7-2.** The pinned Docs7 CLI starts a local preview from `docs`, and both
   `/` and `/skills` return successful HTML responses with their expected
   headings.
-- **AC-D7-3.** The catalog page contains exactly 25 unique baseline skill names
-  and exposes no local path, source coordinate, digest, secret, customer or
-  patient data, private URL, internal policy text, or private source file.
+- **AC-D7-3.** The catalog page contains exactly 77 unique skill names: 25
+  baseline skills and 52 Vercel skills explicitly labeled optional and
+  task-specific. It exposes no local path, source coordinate, digest, secret,
+  customer or patient data, private URL, internal policy text, or private
+  source file.
 - **AC-D7-4.** The hosted canary uses Docs7 Free on `*.docs7.io`; Pro, custom
   domain, DNS changes, autonomous Agent, PR Review, schedule, and Context7
   indexing are not enabled.
