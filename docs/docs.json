@@ -1,5 +1,9 @@
 {
   "name": "VetClub Engineering",
+  "theme": "mint",
+  "colors": {
+    "primary": "#16A34A"
+  },
   "navigation": {
     "groups": [
       {
