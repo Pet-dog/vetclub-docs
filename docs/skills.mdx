@@ -1,13 +1,18 @@
 ---
 title: Skills catalog
-description: The 25 baseline skills available to VetClub agent tasks.
+description: The 25 baseline skills and 52 optional Vercel skills available to VetClub agent tasks.
 ---
 
 # Skills catalog
 
-This public snapshot lists the 25 capabilities in the baseline task profile.
-Task-specific skills are connected only when a task needs them and are not
-part of this default catalog.
+This public snapshot lists two distinct sets:
+
+- 25 baseline capabilities available in the default task profile;
+- 52 optional Vercel skills selected only for tasks that need them.
+
+Publishing a skill here does not enable it automatically. The baseline remains
+limited to 25 skills; optional skills are connected through task-specific
+selection.
 
 | Skill | Public summary |
 | --- | --- |
@@ -37,8 +42,69 @@ part of this default catalog.
 | `ponytail-review` | Reviews a diff specifically for removable over-engineering and simpler native alternatives. |
 | `VOR-skills` | Routes VetPilot work to the correct project owners and proportionate evidence checks. |
 
+## Optional Vercel skills
+
+These 52 skills form a task-specific reference library. They are not part of
+the default profile and are selected only when the task concerns the relevant
+framework, platform feature, integration, or workflow.
+
+| Skill | Public summary |
+| --- | --- |
+| `agent-browser` | Automates browser navigation, interaction, screenshots, data extraction, and visual checks. |
+| `agent-browser-verify` | Runs a focused browser check of a development server, including page loading, console errors, and key UI elements. |
+| `ai-elements` | Guides construction of AI interfaces with reusable React components built on shadcn/ui and the AI SDK. |
+| `ai-gateway` | Configures model routing, provider failover, and cost tracking through Vercel AI Gateway. |
+| `ai-generation-persistence` | Defines persistence patterns for generated content, including stable IDs, URLs, storage, and cost records. |
+| `ai-sdk` | Guides AI SDK features such as generation, structured output, tools, agents, streaming, embeddings, and media. |
+| `auth` | Integrates Clerk, Descope, or Auth0 authentication into Next.js applications. |
+| `bootstrap` | Sets up or repairs projects that depend on Vercel-linked databases, authentication, and managed integrations. |
+| `cdn-caching` | Diagnoses CDN cache hits, stale content, revalidation, ISR, PPR, and request-level cache behavior. |
+| `chat-sdk` | Builds multi-platform chat applications for services such as Slack, Telegram, Teams, Discord, GitHub, and Linear. |
+| `cms` | Integrates headless content systems, preview workflows, revalidation, and visual editing. |
+| `cron-jobs` | Configures and troubleshoots scheduled Vercel tasks declared in `vercel.json`. |
+| `deployments-cicd` | Guides deployment, promotion, rollback, prebuilt output, inspection, and Vercel CI workflows. |
+| `email` | Implements transactional email with Resend and React Email templates. |
+| `env-vars` | Manages local and hosted environment variables, Vercel environment commands, and environment-specific configuration. |
+| `eve` | Guides durable AI agents and agent applications built with the Eve framework. |
+| `geist` | Configures Geist font families and Vercel typography patterns in Next.js interfaces. |
+| `geistdocs` | Guides documentation sites built with the Geistdocs Next.js and Fumadocs template. |
+| `investigation-mode` | Coordinates diagnosis across runtime logs, workflow state, browser behavior, deployment, and environment configuration. |
+| `json-render` | Renders streamed AI messages, tool calls, structured data, and response states in chat interfaces. |
+| `knowledge-update` | Supplies current context for Vercel products and platform capabilities when model knowledge may be outdated. |
+| `marketplace` | Discovers, installs, and manages third-party integrations through Vercel Marketplace. |
+| `micro` | Builds lightweight asynchronous HTTP services with Vercel's `micro` library. |
+| `microfrontends` | Designs and deploys independently owned frontends under shared routing and domains. |
+| `ncc` | Bundles Node.js modules and their dependencies into self-contained files with `@vercel/ncc`. |
+| `next-cache-components` | Guides Next.js Cache Components, partial prerendering, cache directives, tags, lifetimes, and migration from older cache APIs. |
+| `next-forge` | Guides projects and workspace packages built with the next-forge Turborepo SaaS starter. |
+| `next-upgrade` | Upgrades Next.js using official migration guidance and codemods. |
+| `nextjs` | Guides Next.js App Router architecture, routing, components, actions, caching, rendering, and deployment. |
+| `observability` | Configures Vercel logs, traces, analytics, performance insights, OpenTelemetry, and monitoring dashboards. |
+| `payments` | Implements Stripe checkout, subscriptions, billing, SDK integration, and webhook handling. |
+| `react-best-practices` | Reviews TSX components for structure, hooks, accessibility, performance, and TypeScript quality. |
+| `routing-middleware` | Implements request interception, rewrites, redirects, and personalization before the platform cache. |
+| `runtime-cache` | Uses Vercel Runtime Cache for regional key-value caching and tag-based invalidation. |
+| `satori` | Generates SVG output and dynamic social images from HTML and CSS with Satori. |
+| `shadcn` | Guides shadcn/ui installation, composition, registries, theming, Tailwind integration, and interface construction. |
+| `sign-in-with-vercel` | Implements OAuth 2.0 and OIDC login with Vercel accounts as the identity provider. |
+| `swr` | Implements React data fetching, caching, revalidation, mutations, optimistic updates, and pagination with SWR. |
+| `turbopack` | Configures and diagnoses the Next.js Turbopack bundler, builds, and hot reloading. |
+| `turborepo` | Configures monorepo tasks, caching, parallel execution, remote caching, and affected-work detection. |
+| `v0-dev` | Guides v0-based UI generation, CLI and API use, GitHub integration, and Vercel deployment. |
+| `vercel-agent` | Guides Vercel's AI-assisted code review, incident investigation, and SDK integration. |
+| `vercel-api` | Uses the Vercel app or REST API to work with projects, deployments, configuration, domains, logs, and documentation. |
+| `vercel-cli` | Uses the Vercel CLI for deployments, projects, variables, logs, metrics, and domains. |
+| `vercel-connect` | Obtains scoped OAuth access to third-party services through Vercel Connect and OIDC. |
+| `vercel-firewall` | Configures Vercel DDoS protection, WAF rules, rate limits, bot controls, and attack response. |
+| `vercel-flags` | Implements feature flags, staged rollouts, experiments, and provider adapters with Vercel Flags. |
+| `vercel-functions` | Configures and diagnoses Vercel Functions, Edge Functions, Fluid Compute, streaming, and runtimes. |
+| `vercel-queues` | Builds durable asynchronous and event-driven processing with topics, consumer groups, retries, and delayed delivery. |
+| `vercel-sandbox` | Runs untrusted or generated code in isolated ephemeral microVMs. |
+| `vercel-services` | Deploys multiple frontend and backend services within one Vercel project. |
+| `vercel-storage` | Selects and configures Vercel Blob, Edge Config, and Marketplace-backed application storage. |
+
 ## What is deliberately absent
 
 The catalog does not publish skill bodies, local paths, installation state,
 source coordinates, repository identities, hashes, private instructions, or
-task-specific packages.
+unlisted task-specific packages.
